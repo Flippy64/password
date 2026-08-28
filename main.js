@@ -19,6 +19,8 @@ button.addEventListener('click', () => {
     } else if (leaf == 'gravity' && triangle == 'island' && eye == 'mystery') {
         alert('Error: 1OesxKIipLMd8ic9IHMZISPOMmw-mABGd')
         revealCode()
+    } else {
+        alert('Access denied.')
     }
 })
 

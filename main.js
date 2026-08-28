@@ -19,7 +19,7 @@ button.addEventListener('click', () => {
     } else if (leaf == 'gravity' && triangle == 'island' && eye == 'mystery') {
         alert('Error: 1OesxKIipLMd8ic9IHMZISPOMmw-mABGd')
         revealCode()
-    } else {
+    } else if (leaf != caesarShift(codes[0], 3) || triangle != caesarShift(codes[1], 3) || eye != caesarShift(codes[2], 3)) {
         alert('Access denied.')
     }
 })

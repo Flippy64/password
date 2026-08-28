@@ -1,1 +1,1 @@
-const codes = ["#5CX64Y", "#CBA56Y", "#843B45"]
+const codes = ["#5CX64Y", "#CCA56Y", "#843B45"]

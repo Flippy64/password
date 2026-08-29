@@ -7,9 +7,9 @@ const container = document.getElementById('container');
 button.addEventListener('click', () => {
 
     event.preventDefault();
-    const leaf = leafinput.value;
-    const triangle = triangleinput.value;
-    const eye = eyeinput.value;
+    const leaf = leafinput.value.toLowerCase();
+    const triangle = triangleinput.value.toLowerCase();
+    const eye = eyeinput.value.toLowerCase();
     if (leaf == caesarShift(codes[0], 3) && triangle == caesarShift(codes[1], 3) && eye == caesarShift(codes[2], 3)) {
         alert('DBIXQFK')
     } else if (leaf == codes[0] && triangle == codes[1] && eye == codes[2]) {

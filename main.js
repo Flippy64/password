@@ -13,7 +13,7 @@ button.addEventListener('click', () => {
     if (leaf == caesarShift(codes[0], 3) && triangle == caesarShift(codes[1], 3) && eye == caesarShift(codes[2], 3)) {
         alert('DBIXQFK')
     } else if (leaf == codes[0] && triangle == codes[1] && eye == codes[2]) {
-        alert("Access denied. \nAlert: message recieved from server: You thought you can cheat like that, litte object, hahah, how pathetic. I AM ALWAYS TWO STEPS AHEAD")
+        alert("Access denied. \nAlert: message recieved from server: You thought you can cheat like that, litte object, hahah, how pathetic.")
     } else if (leaf == '' || triangle == '' || eye == '') {
         alert('You got nothing?')
     } else if (leaf == 'gravity' && triangle == 'island' && eye == 'mystery') {

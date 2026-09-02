@@ -1,14 +1,14 @@
 input {
     display: inline-block;
     margin: 5px;
-    height:32px;
-    width: 240px
+    height: 32px;
+    width: 240px;
 }
 
 button {
     height: 36px;
     width: 248px;
-    margin:5px
+    margin: 5px;
 }
 
 #poem {
@@ -30,24 +30,45 @@ button {
     font-family: sans-serif;
 }
 
+/* Empty space between the poem and the numbers */
 #poem .spacer {
     height: 20px;
     margin: 0;
+    opacity: 1;
 }
 
-#poem.show p {
+/* Fade in all actual text */
+#poem.show p:not(.spacer) {
     animation: fadeIn 1.5s ease forwards;
 }
 
-#poem.show p:nth-child(1) { animation-delay: 0s; }
-#poem.show p:nth-child(2) { animation-delay: 3s; }
-#poem.show p:nth-child(3) { animation-delay: 6s; }
-#poem.show p:nth-child(4) { animation-delay: 9s; }
-#poem.show p:nth-child(5) { animation-delay: 12s; }
-#poem.show p:nth-child(6) { animation-delay: 15s; }
+/* Poem timing */
+#poem.show p:nth-child(1) {
+    animation-delay: 0s;
+}
 
-/* Number sequence appears after the poem */
-#poem.show p:nth-child(8) {
+#poem.show p:nth-child(2) {
+    animation-delay: 3s;
+}
+
+#poem.show p:nth-child(3) {
+    animation-delay: 6s;
+}
+
+#poem.show p:nth-child(4) {
+    animation-delay: 9s;
+}
+
+#poem.show p:nth-child(5) {
+    animation-delay: 12s;
+}
+
+#poem.show p:nth-child(6) {
+    animation-delay: 15s;
+}
+
+/* Number sequence */
+#poem.show p.sequence {
     animation-delay: 20s;
 }
 
@@ -55,6 +76,7 @@ button {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }

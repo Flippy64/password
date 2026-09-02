@@ -47,7 +47,7 @@ button {
 #poem.show p:nth-child(6) { animation-delay: 15s; }
 
 /* Number sequence appears after the poem */
-#poem.show p:nth-child(7) {
+#poem.show p:nth-child(8) {
     animation-delay: 20s;
 }
 

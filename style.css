@@ -1,3 +1,4 @@
+```css
 input {
     display: inline-block;
     margin: 5px;
@@ -69,6 +70,7 @@ button {
 
 /* Number sequence */
 #poem.show p.sequence {
+    animation: fadeIn 5s ease forwards;
     animation-delay: 20s;
 }
 
@@ -81,3 +83,4 @@ button {
         opacity: 1;
     }
 }
+```
